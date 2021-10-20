@@ -1,0 +1,20 @@
+.card-title {
+    background-image: url("/assets/logo-instagram.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 100%;
+}
+
+.btn-sm{
+    margin-top: 10px;
+    width: 284px;
+}
+.form-group{
+    margin-top: 10px;
+}
+.btn-sm{
+    margin-top: 10px;
+    height: 36px;
+    width: 286px;
+}
