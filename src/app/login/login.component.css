@@ -6,15 +6,7 @@
     width: 100%;
 }
 
-.btn-sm{
-    margin-top: 10px;
-    width: 284px;
-}
-.form-group{
-    margin-top: 10px;
-}
-.btn-sm{
-    margin-top: 10px;
-    height: 36px;
-    width: 286px;
+.btn{
+    margin-top: 20px;
+    width: 100%;
 }
