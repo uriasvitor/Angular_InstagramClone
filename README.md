@@ -4,9 +4,9 @@
 ![1385450129-2ce3a339-e748-44ba-b121-a0e5a96ef64b](https://user-images.githubusercontent.com/81401104/138545214-9c2a617c-684f-4cb6-8b5b-6984e9bbab47.png)
 ![logo-2582748_1280 (1)](https://user-images.githubusercontent.com/81401104/138545429-24c7e3f5-8cbb-4a5b-8cae-4c4d369cd628.png)
 ![css](https://user-images.githubusercontent.com/81401104/138545561-ad4a7f8c-7530-4ef8-970c-ec131fa1a796.png)
+![bo](https://user-images.githubusercontent.com/81401104/138546885-a25f45a7-27ab-4963-85ae-01917a99cde1.png)
 ![darkaws](https://user-images.githubusercontent.com/81401104/138546534-d9585518-c56c-421a-82a7-9d2a993a441d.png)
 ![image](https://user-images.githubusercontent.com/81401104/138546726-6af7b10c-4f04-45e1-a8f7-64b2f4b88d49.png)
-![bo](https://user-images.githubusercontent.com/81401104/138546885-a25f45a7-27ab-4963-85ae-01917a99cde1.png)
 
 # 🧬 Instagram Clone
 
