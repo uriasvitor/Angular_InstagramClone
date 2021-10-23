@@ -7,7 +7,7 @@
 ![darkaws](https://user-images.githubusercontent.com/81401104/138546534-d9585518-c56c-421a-82a7-9d2a993a441d.png)
 ![image](https://user-images.githubusercontent.com/81401104/138546726-6af7b10c-4f04-45e1-a8f7-64b2f4b88d49.png)
 
-# Instagram Clone 🧬
+# 🧬 Instagram Clone
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
 
