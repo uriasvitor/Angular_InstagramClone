@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "a-instagram-clone": {
+      "hosting": {
+        "app3": [
+          "a-instagram-clone"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "a-instagram-clone"
+  }
+}

@@ -1,4 +1,4 @@
-import { animate, state, style, transition, trigger } from '@angular/animations';
+import { animate, keyframes, state, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit} from '@angular/core';
 
 @Component({
@@ -21,7 +21,13 @@ import { Component, OnInit} from '@angular/core';
       })),
       transition('void => criado', [
         style({opacity: 0, transform: 'translate(50px, 0'}),
-        animate('500ms 0s ease-in-out') //duração, delay e aceleração
+        animate('1.5s 0s ease-in-out',keyframes([
+          style({offset: 0.15,opacity:1,transform:'translateX(0)'}),
+          style({offset: 0.80,opacity:1,transform:'translateX(0)'}),
+
+          style({offset: 0.88,opacity:1,transform:'translateY(-10px)'}),
+          style({offset: 0.90,opacity:1,transform:'translateY(0)'})
+        ])) //duração, delay e aceleração
       ])
     ])
   ]

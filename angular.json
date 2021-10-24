@@ -34,7 +34,6 @@
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/popper.js/dist/umd/popper.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js"
-              
             ]
           },
           "configurations": {
@@ -103,6 +102,16 @@
               "src/styles.css"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "app3:build:production",
+            "firebaseProject": "a-instagram-clone",
+            "firebaseHostingSite": "a-instagram-clone"
           }
         }
       }
