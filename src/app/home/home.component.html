@@ -1,12 +1,16 @@
 <nav class="navbar fixed-top navbar-light bg-white">
   <div class="container">
-    <div class="logo"><img src="../../assets/logo-instagram-2.png"></div>
-    <div class="add-post"><img src="../../assets/camera.png"></div>
-  </div>  
-  <a href="#" (click)="sair()" style="margin-left:30px">sair</a>
+    <div class="logo"></div>
+    <div class="add-post" data-bs-toggle="modal" data-bs-target="#exampleModal">
+
+    </div>
+    <a href="#" (click)="sair()" style="margin-left: 25px">sair</a>
+  </div>
 </nav>
+
 
 <br /><br /><br />
 <div class="container">
-  <app-publicacoes></app-publicacoes>   
+  <app-publicacoes></app-publicacoes> 
+  <app-incluir-publicacao></app-incluir-publicacao>
 </div>

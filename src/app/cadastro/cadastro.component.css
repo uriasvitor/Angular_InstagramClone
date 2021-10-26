@@ -10,3 +10,12 @@
     margin-top: 20px;
     width: 100%;
 }
+input{
+    margin-top: 2px;
+}
+input .ng-touched{
+    border: 1px red;
+}
+input .ng-valid.ng-touched{
+    border: 21px rgb(0, 255, 13);
+}

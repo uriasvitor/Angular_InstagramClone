@@ -4,7 +4,6 @@ import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { AngularFireDatabase} from '@angular/fire/compat/database';
 import { Router } from "@angular/router";
 import { Injectable } from "@angular/core";
-import { Observable } from "rxjs";
 
 //Adicionar Injectable para injetar o Auths ao App.module.ts
 @Injectable({
@@ -65,6 +64,7 @@ export class Auths{
                         this.userToken = idToken;
                         localStorage.setItem('idToken', idToken);
                         this.router.navigate(['/home']);
+                        console.log(idToken);
                         return (idToken);
                     });
                 }

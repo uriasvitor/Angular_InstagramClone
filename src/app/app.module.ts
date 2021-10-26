@@ -16,6 +16,9 @@ import { HomeComponent } from './home/home.component';
 import { PublicacoesComponent } from './home/publicacoes/publicacoes.component';
 import { ROUTES } from './app.routes';
 import { AutenticacaoGuard } from './autenticacao-guard.service';
+import { IncluirPublicacao } from './incluir-publicacao/incluir-publicacao';
+import { Bd } from './bd.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +27,8 @@ import { AutenticacaoGuard } from './autenticacao-guard.service';
     LoginComponent,
     CadastroComponent,
     HomeComponent,
-    PublicacoesComponent
+    PublicacoesComponent,
+    IncluirPublicacao
   ],
   imports: [
     BrowserModule,
@@ -34,7 +38,7 @@ import { AutenticacaoGuard } from './autenticacao-guard.service';
     RouterModule.forRoot(ROUTES),
     AngularFireModule.initializeApp(environment.firebase),
   ],
-  providers: [Auths,AutenticacaoGuard],
+  providers: [Auths,AutenticacaoGuard,Bd],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
