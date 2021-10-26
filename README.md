@@ -22,3 +22,5 @@ Esse projeto foi gerado em [Angular CLI](https://github.com/angular/angular-cli)
 ### Fotos
 ![Animação](https://user-images.githubusercontent.com/81401104/138797049-ba1a6e53-ca87-4da1-8c6e-a50276988b47.gif)
 ###### Gif acelerado
+
+![Animação](https://user-images.githubusercontent.com/81401104/138803349-06be07cd-b1ad-4887-814d-ba9fb4dba59b.gif)
