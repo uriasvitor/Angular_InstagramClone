@@ -22,5 +22,10 @@ Esse projeto foi gerado em [Angular CLI](https://github.com/angular/angular-cli)
 ### Fotos
 ![Animação](https://user-images.githubusercontent.com/81401104/138797049-ba1a6e53-ca87-4da1-8c6e-a50276988b47.gif)
 ###### Gif acelerado
+###### Sistema de Login e cadastro com banco de dados 
 
 ![Animação](https://user-images.githubusercontent.com/81401104/138803349-06be07cd-b1ad-4887-814d-ba9fb4dba59b.gif)
+
+###### Sistema de Excluir TokenId quando o Usuario clickar em Sair (LogOut)
+
+![Animação](https://user-images.githubusercontent.com/81401104/138804311-27379005-5ff9-4d5d-b74f-fc086ae68c11.gif)
