@@ -19,4 +19,6 @@ Esse projeto é focado no front-end e back-end para aprendizado
 
 Esse projeto foi gerado em [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
 
-###Fotos
+### Fotos
+![Animação](https://user-images.githubusercontent.com/81401104/138797049-ba1a6e53-ca87-4da1-8c6e-a50276988b47.gif)
+###### Gif acelerado
