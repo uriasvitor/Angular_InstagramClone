@@ -31,6 +31,10 @@ export class Auths{
         })
         
     }
+    public loginspace(){
+        return true;
+    }
+
     //Cadastrar Usuario
     public SignUp(usuario:Usuario):Promise<any>{
         return this.afAuth.createUserWithEmailAndPassword(usuario.email,usuario.senha)
@@ -44,13 +48,13 @@ export class Auths{
                 console.log(error);
             })
     }
-    public autenticar(email:string,senha:string){
+    public autenticar(email:string,senha:string):Promise<any>{
         return this.afAuth.signInWithEmailAndPassword(email,senha)
             .then((result:any)=>{
                 this.GetToken();
             })
             .catch((error:Error)=>{
-                console.log(error);
+                this.loginspace();
             })
     }
     public userToken: string='';

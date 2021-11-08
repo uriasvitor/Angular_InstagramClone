@@ -19,6 +19,9 @@ export class CadastroComponent implements OnInit {
     'nome_usuario': new FormControl('',[Validators.required,Validators.minLength(4),Validators.maxLength(30)]),
     'senha': new FormControl('',[Validators.required,Validators.minLength(6),Validators.maxLength(30)]),
   })
+
+  public cadastroErro:boolean = false;
+
   constructor(private auth:Auths) { }
 
   ngOnInit() {
@@ -34,13 +37,15 @@ export class CadastroComponent implements OnInit {
         this.formulario.value.nome_usuario,
         this.formulario.value.senha
     )
-    console.log(usuario);
+    console.log(this.formulario.status);
 
     this.auth.SignUp(usuario)
-      .then(()=> this.exibirPainelLogin())
-      .catch((error:Error)=>{
-        console.log(error);
-    });
+      .then((result:any)=> {
+        this.cadastroErro = true
+        console.log(result)
+      }).catch((error:Error)=>{
+        
+      });
   }
   
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output, Injectable } from '@angular/core';
 import { FormGroup,FormControl } from '@angular/forms';
 import { Auths } from '../auths.service';
 
@@ -7,6 +7,7 @@ import { Auths } from '../auths.service';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
+@Injectable()
 export class LoginComponent implements OnInit {
 
  @Output() public exibirPainel: EventEmitter<string> = new EventEmitter()
@@ -18,14 +19,19 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
   }
+  
+  public loginError:boolean = false;
 
   public exibirPainelCadastro(): void {
     this.exibirPainel.emit('cadastro');
   }
-  public autenticar():void{
+  public autenticar(){
     this.auth.autenticar(
       this.formulario.value.email,
       this.formulario.value.senha
-    )
+    ).then((result:any)=>{
+      this.loginError = true
+    })
   }
+
 }

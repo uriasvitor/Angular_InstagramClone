@@ -21,10 +21,11 @@
       </div>
       <button type="submit" class="btn btn-primary btn-sm btn-block">Entrar</button>
     </form>
+    <div class="noLogin" *ngIf="loginError;else login">
     <hr />
-
     <p class="small text-danger text-center">O nome de usuário inserido não pertence a uma conta. Verifique seu nome de usuário e tente novamente.</p>
-
+    </div>
+    <ng-template #login></ng-template>
   </div>
 </div>
 <br />

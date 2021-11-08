@@ -38,11 +38,14 @@
       </div>
       <button type="submit" class="btn btn-primary btn-sm btn-block">Cadastre-se</button>
     </form>
+    <div *ngIf="cadastroErro; else bundle">
     <hr />
-
-    <p class="small text-center">Ao cadastrar-se, você concorda com nossos <b>Termos</b> e <b>Política de Privacidade</b>.</p>
-
+    <p class="small text-danger text-center">Por favor preencha os dados corretamente e tente novamente.</p>
   </div>
+    <ng-template #bundle>
+    <p class="small text-center">Ao cadastrar-se, você concorda com nossos <b>Termos</b> e <b>Política de Privacidade</b>.</p>
+  </ng-template>
+</div>
 </div>
 <br />
 <div class="card" style="width: 20rem;">
