@@ -3,8 +3,8 @@ import { AngularFireAuth } from "@angular/fire/compat/auth/";
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { AngularFireDatabase} from '@angular/fire/compat/database';
 import { Router } from "@angular/router";
-import { Injectable } from "@angular/core";
-
+import { Injectable, Input } from "@angular/core";
+import { CadastroComponent } from "./cadastro/cadastro.component";
 //Adicionar Injectable para injetar o Auths ao App.module.ts
 @Injectable({
     providedIn: 'root'
@@ -31,9 +31,6 @@ export class Auths{
         })
         
     }
-    public loginspace(){
-        return true;
-    }
 
     //Cadastrar Usuario
     public SignUp(usuario:Usuario):Promise<any>{
@@ -41,8 +38,8 @@ export class Auths{
             .then((result:any)=>{
                 //Registrando dados complementares do usuario no path email na base64
                 this.adb.database.ref(`usuario_detalhe/${btoa(usuario.email)}`)
-                .set(usuario)
-                
+                .set(usuario);
+                console.log(result);
             })
             .catch((error:Error)=>{
                 console.log(error);
@@ -54,7 +51,7 @@ export class Auths{
                 this.GetToken();
             })
             .catch((error:Error)=>{
-                this.loginspace();
+                console.log(error)
             })
     }
     public userToken: string='';

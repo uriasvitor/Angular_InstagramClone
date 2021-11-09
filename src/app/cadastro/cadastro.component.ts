@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
 import { FormGroup,FormControl, Validators } from '@angular/forms';
 import { Usuario } from '../acesso/usuario.model';
 import { Auths } from '../auths.service';
@@ -20,6 +20,8 @@ export class CadastroComponent implements OnInit {
     'senha': new FormControl('',[Validators.required,Validators.minLength(6),Validators.maxLength(30)]),
   })
 
+
+  @Input()
   public cadastroErro:boolean = false;
 
   constructor(private auth:Auths) { }
@@ -29,6 +31,7 @@ export class CadastroComponent implements OnInit {
   public exibirPainelLogin(): void {
     this.exibirPainel.emit('login')
   }
+
   public cadastrarUsuario():void{
     console.log(this.formulario)
     let usuario:Usuario = new Usuario(
@@ -37,15 +40,16 @@ export class CadastroComponent implements OnInit {
         this.formulario.value.nome_usuario,
         this.formulario.value.senha
     )
-    console.log(this.formulario.status);
 
     this.auth.SignUp(usuario)
       .then((result:any)=> {
         this.cadastroErro = true
-        console.log(result)
-      }).catch((error:Error)=>{
-        
-      });
+        if(result == undefined){
+          this.exibirPainelLogin()
+        }
+      }).catch((erro:Error)=>{
+        console.log(erro);
+      })
   }
   
 }
